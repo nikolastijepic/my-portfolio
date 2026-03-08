@@ -1,0 +1,265 @@
+:root {
+	--primary: #76caff;
+	--primary-dark: #007ecd;
+	--primary-light: #badff5;
+	--background: black;
+	--background-card: #003353;
+	--radius-sm: 6px;
+	--radius-md: 12px;
+	--radius-lg: 24px;
+	--radius-round: 50%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	background-color: var(--background);
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Source Code Pro", monospace;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.flex {
+	display: flex;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+/* ---------- Navigation Bar ----------- */
+
+.nav-bar {
+	position: relative;
+	padding: 20px 0;
+}
+
+.nav-bar ul {
+	list-style: none;
+	gap: 50px;
+}
+
+.nav-bar a {
+	color: var(--primary);
+	text-decoration: none;
+}
+
+.nav-bar a:hover {
+	color: var(--primary-dark);
+}
+
+.nav-links {
+	gap: 50px;
+}
+
+.nav-icons {
+	position: absolute;
+	right: 20px;
+}
+
+.nav-icons img {
+	width: 48px;
+	height: 48px;
+}
+
+.active {
+	border-bottom: 2px solid var(--primary);
+}
+
+/* ---------- HOME PAGE ----------- */
+
+/* --- Hero --- */
+
+.hero {
+	background-image: url(../assets/images/code-bg.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.hero-content {
+	gap: 80px 200px;
+	padding: 50px 0;
+}
+
+.hero-text {
+	color: var(--primary);
+	border-radius: var(--radius-lg);
+	gap: 20px;
+	background-color: rgba(0, 0, 0, 0.607);
+	padding: 35px 30px;
+}
+
+.hero-text h1 {
+	font-size: 2.5rem;
+}
+
+.hero-text h2 {
+	font-size: 1.5rem;
+}
+
+.hero-text a {
+	padding: 15px 25px;
+	margin: 10px 0;
+	font-size: 1.25rem;
+	background-color: var(--primary-dark);
+	border-radius: var(--radius-md);
+	text-decoration: none;
+	color: var(--primary-light);
+	transition: transform 0.2s ease;
+}
+
+.hero-text a:hover {
+	background: var(--primary-dark);
+	color: var(--primary-light);
+	transform: translateY(-3px);
+}
+
+.hero-img img {
+	border-radius: var(--radius-round);
+	width: 350px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.792);
+}
+
+/* --- My Projects --- */
+
+.my-projects {
+	gap: 50px;
+	margin: 0 200px 50px 200px;
+}
+
+.my-projects h2 {
+	color: var(--primary);
+	margin: 50px 0;
+	font-size: 2rem;
+}
+
+.project-card {
+	border: solid 1px var(--primary);
+	border-radius: var(--radius-lg);
+	gap: 50px;
+	padding: 50px;
+	background-color: var(--background-card);
+}
+
+.project-card img {
+	width: 500px;
+	border-radius: var(--radius-lg);
+}
+
+.project-card-description {
+	gap: 50px;
+}
+
+.project-card-description h3 {
+	font-size: 1.25rem;
+	color: var(--primary);
+}
+
+.project-card-links {
+	gap: 30px;
+}
+
+.project-card-links a {
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: var(--primary);
+	background-color: var(--background);
+	border-radius: var(--radius-md);
+	padding: 10px 15px;
+}
+
+.project-card-links a:hover {
+	background-color: rgb(25, 25, 25);
+}
+
+/* ---------- Footer ----------- */
+
+.footer {
+	color: var(--primary);
+	padding: 20px 0;
+}
+
+/* ---------- CONTACT PAGE ----------- */
+
+.contact-section {
+	max-width: 600px;
+	margin: 100px auto;
+	padding: 40px;
+	gap: 25px;
+}
+
+.contact-section h1 {
+	color: var(--primary);
+	text-align: center;
+}
+
+.contact-form {
+	background: var(--primary-dark);
+	border-radius: var(--radius-md);
+	padding: 40px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	gap: 20px;
+}
+
+.form-group {
+	text-align: left;
+	gap: 5px;
+}
+
+.form-group label {
+	font-size: 1.1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+	padding: 12px;
+	border: 1px solid #bce5ff;
+	font-size: 1.1rem;
+	border-radius: var(--radius-md);
+	background-color: var(--primary);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	outline: none;
+	border-color: var(--primary-dark);
+}
+
+.contact-form button {
+	margin-top: 10px;
+	padding: 14px;
+	border: none;
+	border-radius: 10px;
+	background: var(--background);
+	color: var(--primary);
+	font-size: 1.1rem;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+
+.contact-form button:hover {
+	background-color: rgb(30, 30, 30);
+	color: var(--primary);
+	transform: translateY(-3px);
+}
