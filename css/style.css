@@ -91,7 +91,7 @@ body {
 /* --- Hero --- */
 
 .hero {
-	background-image: url(../assets/images/code-bg.webp);
+	background-image: url(../assets/images/code-bg.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -99,7 +99,7 @@ body {
 
 .hero-content {
 	gap: 80px 200px;
-	padding: 50px 0;
+	padding: 50px;
 }
 
 .hero-text {
