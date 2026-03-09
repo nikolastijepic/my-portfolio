@@ -160,6 +160,7 @@ body {
 	gap: 50px;
 	padding: 50px;
 	background-color: var(--background-card);
+	max-width: 1200px;
 }
 
 .project-card img {
@@ -211,6 +212,7 @@ body {
 	gap: 50px;
 	padding: 50px;
 	background-color: var(--primary-dark);
+	max-width: 1200px;
 }
 
 .current-project-card img {
