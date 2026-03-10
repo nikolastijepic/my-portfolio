@@ -285,6 +285,11 @@ body {
 	font-size: 1.1rem;
 }
 
+.form-group placeholder {
+	text-align: left;
+	gap: 5px;
+}
+
 .contact-form input,
 .contact-form textarea {
 	padding: 12px;
@@ -298,6 +303,12 @@ body {
 .contact-form textarea:focus {
 	outline: none;
 	border-color: var(--primary-dark);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+	color: var(--primary-dark);
+	opacity: 0.75;
 }
 
 .contact-form button {
