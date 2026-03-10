@@ -47,6 +47,10 @@ body {
 	flex-wrap: wrap;
 }
 
+.text-center {
+	text-align: center;
+}
+
 /* ---------- Navigation Bar ----------- */
 
 .nav-bar {
@@ -102,12 +106,16 @@ body {
 	padding: 50px;
 }
 
+.hero-text-buttons {
+	background-color: rgba(0, 0, 0, 0.607);
+	gap: 30px;
+	padding: 30px 30px;
+	border-radius: var(--radius-lg);
+}
+
 .hero-text {
 	color: var(--primary);
-	border-radius: var(--radius-lg);
-	gap: 20px;
-	background-color: rgba(0, 0, 0, 0.607);
-	padding: 35px 30px;
+	gap: 15px;
 }
 
 .hero-text h1 {
@@ -118,7 +126,7 @@ body {
 	font-size: 1.5rem;
 }
 
-.hero-text a {
+.hero-text-buttons a {
 	padding: 15px 25px;
 	margin: 10px 0;
 	font-size: 1.25rem;
@@ -129,7 +137,7 @@ body {
 	transition: transform 0.2s ease;
 }
 
-.hero-text a:hover {
+.hero-buttons a:hover {
 	background: var(--primary-dark);
 	color: var(--primary-light);
 	transform: translateY(-3px);
@@ -196,14 +204,14 @@ body {
 
 /* --- My Current Projects --- */
 
+.current-project {
+	gap: 50px;
+}
+
 .current-project h2 {
 	color: var(--primary);
 	font-size: 2rem;
 	margin-top: 50px;
-}
-
-.current-project {
-	gap: 50px;
 }
 
 .current-project-card {
@@ -218,6 +226,10 @@ body {
 .current-project-card img {
 	width: 500px;
 	border-radius: var(--radius-lg);
+}
+
+.current-project-links {
+	gap: 30px;
 }
 
 .current-project-links a {
@@ -250,7 +262,7 @@ body {
 	gap: 25px;
 }
 
-.contact-section h1 {
+.contact-section h2 {
 	color: var(--primary);
 	text-align: center;
 }
@@ -303,4 +315,115 @@ body {
 	background-color: rgb(30, 30, 30);
 	color: var(--primary);
 	transform: translateY(-3px);
+}
+
+@media only screen and (max-width: 430px) {
+	.nav-bar {
+		padding: 10px 25px;
+		justify-content: space-between;
+	}
+	.nav-bar ul {
+		gap: 15px;
+		font-size: 1.1rem;
+	}
+	.nav-icons {
+		position: static;
+		right: auto;
+	}
+	.hero {
+		height: 100vh;
+	}
+	.hero-text-buttons {
+		gap: 15px;
+		padding: 10px 10px;
+		border-radius: var(--radius-md);
+	}
+	.hero-content {
+		gap: 30px;
+		padding: 15px;
+	}
+	.hero-text {
+		border-radius: var(--radius-md);
+		padding: 25px 20px;
+	}
+	.hero-img img {
+		width: 300px;
+	}
+	.my-projects {
+		margin: 0 15px;
+		gap: 35px;
+	}
+	.my-projects h2 {
+		margin-top: 50px;
+		font-size: 1.8rem;
+	}
+
+	.project-card {
+		border-radius: var(--radius-md);
+		gap: 35px;
+		padding: 15px;
+		display: flex;
+		flex-direction: column;
+	}
+	.project-card img {
+		max-width: 100%;
+		order: -1;
+
+		border-radius: var(--radius-md);
+	}
+	.project-card-description {
+		gap: 25px;
+	}
+	.project-card-description h3 {
+		font-size: 1.25rem;
+		padding: 0 10px;
+	}
+	.project-card-links a {
+		font-size: 1.3rem;
+		border-radius: var(--radius-sm);
+		padding: 10px 13px;
+	}
+	.current-project {
+		gap: 35px;
+	}
+	.current-project h2 {
+		font-size: 1.8rem;
+	}
+	.current-project-card {
+		border-radius: var(--radius-md);
+		gap: 35px;
+		margin: 0 15px;
+		padding: 15px;
+		display: flex;
+		flex-direction: column;
+	}
+	.current-project-card img {
+		max-width: 100%;
+		border-radius: var(--radius-md);
+	}
+	.current-project-card a {
+		font-size: 1.3rem;
+		border-radius: var(--radius-sm);
+		padding: 10px 13px;
+	}
+	.current-project-links {
+		gap: 35px;
+	}
+	.contact-section {
+		margin: 50px 15px;
+		padding: 0;
+		gap: 20px;
+	}
+	.contact-section h2 {
+		font-size: 1.8rem;
+	}
+	.contact-form {
+		padding: 20px;
+		gap: 18px;
+	}
+	.contact-form input,
+	.contact-form textarea {
+		font-size: 1rem;
+		border-radius: var(--radius-sm);
+	}
 }
