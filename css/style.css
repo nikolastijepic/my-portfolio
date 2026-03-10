@@ -254,6 +254,18 @@ body {
 	margin-top: 50px;
 }
 
+/* --- Back To Top Button --- */
+
+.back-to-top {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	background-color: var(--primary-dark);
+	color: var(--primary-light);
+	padding: 10px 25px;
+	border-radius: var(--radius-md);
+}
+
 /* ---------- CONTACT PAGE ----------- */
 
 .contact-section {
@@ -393,6 +405,11 @@ body {
 		font-size: 1.3rem;
 		border-radius: var(--radius-sm);
 		padding: 10px 13px;
+	}
+	.back-to-top {
+		bottom: 15px;
+		right: 15px;
+		padding: 12px 25px;
 	}
 	.current-project {
 		gap: 35px;
