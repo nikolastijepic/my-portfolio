@@ -15,6 +15,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 html {
 	background-color: var(--background);
 	scroll-behavior: smooth;
@@ -357,7 +358,6 @@ body {
 		margin-top: 50px;
 		font-size: 1.8rem;
 	}
-
 	.project-card {
 		border-radius: var(--radius-md);
 		gap: 35px;
